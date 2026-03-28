@@ -18,12 +18,16 @@
 
 ## 🛠️ Локальный запуск
 
+uvicorn app.main:app --host 0.0.0.0 --port 4200 --reload
+
 ### Установка зависимостей
 
-```bash
 pip install -r requirements.txt
 
 
-## Curl запрос в powerhell
+### Curl запрос в powerhell
 
 Invoke-RestMethod -Uri http://localhost:4200/info
+
+
+
